@@ -1,0 +1,12 @@
+C:\Users\ksmol\Desktop\rss-readers\RssReaders.Infrastructure\bin\Debug\netstandard2.0\RssReaders.Infrastructure.deps.json
+C:\Users\ksmol\Desktop\rss-readers\RssReaders.Infrastructure\bin\Debug\netstandard2.0\RssReaders.Infrastructure.dll
+C:\Users\ksmol\Desktop\rss-readers\RssReaders.Infrastructure\bin\Debug\netstandard2.0\RssReaders.Infrastructure.pdb
+C:\Users\ksmol\Desktop\rss-readers\RssReaders.Infrastructure\bin\Debug\netstandard2.0\RssReaders.Core.dll
+C:\Users\ksmol\Desktop\rss-readers\RssReaders.Infrastructure\bin\Debug\netstandard2.0\RssReaders.Core.pdb
+C:\Users\ksmol\Desktop\rss-readers\RssReaders.Infrastructure\obj\Debug\netstandard2.0\RssReaders.Infrastructure.csprojAssemblyReference.cache
+C:\Users\ksmol\Desktop\rss-readers\RssReaders.Infrastructure\obj\Debug\netstandard2.0\RssReaders.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ksmol\Desktop\rss-readers\RssReaders.Infrastructure\obj\Debug\netstandard2.0\RssReaders.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ksmol\Desktop\rss-readers\RssReaders.Infrastructure\obj\Debug\netstandard2.0\RssReaders.Infrastructure.AssemblyInfo.cs
+C:\Users\ksmol\Desktop\rss-readers\RssReaders.Infrastructure\obj\Debug\netstandard2.0\RssReaders.Infrastructure.csproj.CopyComplete
+C:\Users\ksmol\Desktop\rss-readers\RssReaders.Infrastructure\obj\Debug\netstandard2.0\RssReaders.Infrastructure.dll
+C:\Users\ksmol\Desktop\rss-readers\RssReaders.Infrastructure\obj\Debug\netstandard2.0\RssReaders.Infrastructure.pdb
