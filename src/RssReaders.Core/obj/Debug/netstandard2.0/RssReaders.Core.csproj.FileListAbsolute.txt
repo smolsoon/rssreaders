@@ -1,0 +1,9 @@
+C:\Users\ksmol\Desktop\rss-readers\src\RssReaders.Core\bin\Debug\netstandard2.0\RssReaders.Core.deps.json
+C:\Users\ksmol\Desktop\rss-readers\src\RssReaders.Core\bin\Debug\netstandard2.0\RssReaders.Core.dll
+C:\Users\ksmol\Desktop\rss-readers\src\RssReaders.Core\bin\Debug\netstandard2.0\RssReaders.Core.pdb
+C:\Users\ksmol\Desktop\rss-readers\src\RssReaders.Core\obj\Debug\netstandard2.0\RssReaders.Core.csprojAssemblyReference.cache
+C:\Users\ksmol\Desktop\rss-readers\src\RssReaders.Core\obj\Debug\netstandard2.0\RssReaders.Core.csproj.CoreCompileInputs.cache
+C:\Users\ksmol\Desktop\rss-readers\src\RssReaders.Core\obj\Debug\netstandard2.0\RssReaders.Core.AssemblyInfoInputs.cache
+C:\Users\ksmol\Desktop\rss-readers\src\RssReaders.Core\obj\Debug\netstandard2.0\RssReaders.Core.AssemblyInfo.cs
+C:\Users\ksmol\Desktop\rss-readers\src\RssReaders.Core\obj\Debug\netstandard2.0\RssReaders.Core.dll
+C:\Users\ksmol\Desktop\rss-readers\src\RssReaders.Core\obj\Debug\netstandard2.0\RssReaders.Core.pdb
