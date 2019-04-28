@@ -11,6 +11,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using RssReaders.Core.Repositories;
+using RssReaders.Infrastructure.Mappers;
+using RssReaders.Infrastructure.Repositories;
+using RssReaders.Infrastructure.Services;
+using RssReaders.Infrastructure.Settings;
 
 namespace RssReaders.Api
 {
@@ -28,6 +33,14 @@ namespace RssReaders.Api
         {
             services.AddMvc()
                 .AddNewtonsoftJson();
+            services.AddAuthorization(x => x.AddPolicy("HasAdminRole", p => p.RequireRole("admin")));
+            services.AddScoped<IUserRepository, UserRepository> ();
+            services.AddScoped<IUserService, UserService>();
+            services.AddSingleton(AutoMapperConfig.Initialize());
+            services.Configure<DatabaseSettings> (options => {
+                options.ConnectionString = Configuration.GetSection ("MongoDb:ConnectionString").Value;
+                options.Database = Configuration.GetSection ("MongoDb:Database").Value;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,35 +1,35 @@
 using System;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Options;
+using MongoDB.Driver;
 using RssReaders.Core.Model;
 using RssReaders.Core.Repositories;
+using RssReaders.Infrastructure.Database;
+using RssReaders.Infrastructure.Settings;
 
 namespace RssReaders.Infrastructure.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        public Task AddAsync(User user)
+        private readonly AuthContext  _database = null;
+        public UserRepository(IOptions<DatabaseSettings> settings)
         {
-            throw new NotImplementedException();
+            _database = new AuthContext(settings);
         }
+        
+        public async Task<User> GetAsync(Guid id)
+            => await _database.Users.AsQueryable().FirstOrDefaultAsync();
 
-        public Task DeleteAsync(User user)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<User> GetAsync(string email)
+            => await _database.Users.AsQueryable().FirstOrDefaultAsync();
 
-        public Task<User> GetAsync(Guid id)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task AddAsync(User user)
+            => await _database.Users.InsertOneAsync(user);
 
-        public Task<User> GetAsync(string email)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task DeleteAsync(User user)
+            => await _database.Users.DeleteOneAsync(x => x._id == user._id);
 
-        public Task UpdateAsync(User user)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task UpdateAsync(User user)
+            => await _database.Users.ReplaceOneAsync(x => x._id == user._id, user);
     }
 }
