@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ksmol\\Desktop\\rss-readers\\src\\RssReaders.Core\\RssReaders.Core.csproj": {}
+    "c:\\Users\\ksmol\\Desktop\\rss-readers\\src\\RssReaders.Core\\RssReaders.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ksmol\\Desktop\\rss-readers\\src\\RssReaders.Core\\RssReaders.Core.csproj": {
+    "c:\\Users\\ksmol\\Desktop\\rss-readers\\src\\RssReaders.Core\\RssReaders.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ksmol\\Desktop\\rss-readers\\src\\RssReaders.Core\\RssReaders.Core.csproj",
+        "projectUniqueName": "c:\\Users\\ksmol\\Desktop\\rss-readers\\src\\RssReaders.Core\\RssReaders.Core.csproj",
         "projectName": "RssReaders.Core",
-        "projectPath": "C:\\Users\\ksmol\\Desktop\\rss-readers\\src\\RssReaders.Core\\RssReaders.Core.csproj",
+        "projectPath": "c:\\Users\\ksmol\\Desktop\\rss-readers\\src\\RssReaders.Core\\RssReaders.Core.csproj",
         "packagesPath": "C:\\Users\\ksmol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ksmol\\Desktop\\rss-readers\\src\\RssReaders.Core\\obj\\",
+        "outputPath": "c:\\Users\\ksmol\\Desktop\\rss-readers\\src\\RssReaders.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

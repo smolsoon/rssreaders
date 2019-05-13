@@ -1,0 +1,11 @@
+C:\Users\ksmol\Desktop\rss-readers\RssParser\bin\Debug\netcoreapp2.1\RssParser.deps.json
+C:\Users\ksmol\Desktop\rss-readers\RssParser\bin\Debug\netcoreapp2.1\RssParser.runtimeconfig.json
+C:\Users\ksmol\Desktop\rss-readers\RssParser\bin\Debug\netcoreapp2.1\RssParser.runtimeconfig.dev.json
+C:\Users\ksmol\Desktop\rss-readers\RssParser\bin\Debug\netcoreapp2.1\RssParser.dll
+C:\Users\ksmol\Desktop\rss-readers\RssParser\bin\Debug\netcoreapp2.1\RssParser.pdb
+C:\Users\ksmol\Desktop\rss-readers\RssParser\obj\Debug\netcoreapp2.1\RssParser.csprojAssemblyReference.cache
+C:\Users\ksmol\Desktop\rss-readers\RssParser\obj\Debug\netcoreapp2.1\RssParser.csproj.CoreCompileInputs.cache
+C:\Users\ksmol\Desktop\rss-readers\RssParser\obj\Debug\netcoreapp2.1\RssParser.AssemblyInfoInputs.cache
+C:\Users\ksmol\Desktop\rss-readers\RssParser\obj\Debug\netcoreapp2.1\RssParser.AssemblyInfo.cs
+C:\Users\ksmol\Desktop\rss-readers\RssParser\obj\Debug\netcoreapp2.1\RssParser.dll
+C:\Users\ksmol\Desktop\rss-readers\RssParser\obj\Debug\netcoreapp2.1\RssParser.pdb

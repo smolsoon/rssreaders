@@ -1,0 +1,4 @@
+c:\Users\ksmol\Desktop\rss-readers\RssParserUnitTests\obj\Debug\netcoreapp2.1\RssParserUnitTests.csprojAssemblyReference.cache
+c:\Users\ksmol\Desktop\rss-readers\RssParserUnitTests\obj\Debug\netcoreapp2.1\RssParserUnitTests.csproj.CoreCompileInputs.cache
+c:\Users\ksmol\Desktop\rss-readers\RssParserUnitTests\obj\Debug\netcoreapp2.1\RssParserUnitTests.AssemblyInfoInputs.cache
+c:\Users\ksmol\Desktop\rss-readers\RssParserUnitTests\obj\Debug\netcoreapp2.1\RssParserUnitTests.AssemblyInfo.cs

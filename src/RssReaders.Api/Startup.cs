@@ -35,8 +35,16 @@ namespace RssReaders.Api
                 .AddNewtonsoftJson();
             services.AddAuthorization(x => x.AddPolicy("HasAdminRole", p => p.RequireRole("admin")));
             services.AddScoped<IUserRepository, UserRepository> ();
+            services.AddScoped<IAddressRepository,AddressRepository>();
+            services.AddScoped<IItemRepository, ItemRepository>();
+            services.AddScoped<IChannelRepository, ChannelRepository>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IAddressService, AddressService>();
+            services.AddScoped<IItemService, ItemService>();
+            services.AddSingleton<IJwtHandler, JwtHandler>();
+            services.AddScoped<IParserService, ParserService>();
             services.AddSingleton(AutoMapperConfig.Initialize());
+            services.Configure<JWTSettings>(Configuration.GetSection("jwt"));
             services.Configure<DatabaseSettings> (options => {
                 options.ConnectionString = Configuration.GetSection ("MongoDb:ConnectionString").Value;
                 options.Database = Configuration.GetSection ("MongoDb:Database").Value;

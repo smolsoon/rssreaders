@@ -1,6 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using RssReaders.Core.Model;
 using RssReaders.Core.Repositories;
@@ -17,7 +18,7 @@ namespace RssReaders.Infrastructure.Repositories
             _database = new AuthContext(settings);
         }
         
-        public async Task<User> GetAsync(Guid id)
+        public async Task<User> GetAsync(ObjectId id)
             => await _database.Users.AsQueryable().FirstOrDefaultAsync();
 
         public async Task<User> GetAsync(string email)
@@ -27,9 +28,9 @@ namespace RssReaders.Infrastructure.Repositories
             => await _database.Users.InsertOneAsync(user);
 
         public async Task DeleteAsync(User user)
-            => await _database.Users.DeleteOneAsync(x => x._id == user._id);
+            => await _database.Users.DeleteOneAsync(x => x.Id == user.Id);
 
         public async Task UpdateAsync(User user)
-            => await _database.Users.ReplaceOneAsync(x => x._id == user._id, user);
+            => await _database.Users.ReplaceOneAsync(x => x.Id == user.Id, user);
     }
 }

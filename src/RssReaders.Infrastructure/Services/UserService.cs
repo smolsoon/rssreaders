@@ -1,6 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using AutoMapper;
+using MongoDB.Bson;
 using RssReaders.Core.Model;
 using RssReaders.Core.Repositories;
 using RssReaders.Infrastructure.DTO;
@@ -19,7 +20,7 @@ namespace RssReaders.Infrastructure.Services
             _mapper = mapper;
             _jwtHandler = jwtHandler;
         }
-        public async Task<AccountDTO> GetAccountAsync(Guid userId)
+        public async Task<AccountDTO> GetAccountAsync(ObjectId userId)
         {
             var user = await _userRepository.GetAsync(userId);
             return _mapper.Map<AccountDTO>(user);
@@ -35,7 +36,7 @@ namespace RssReaders.Infrastructure.Services
                 throw new Exception("Invalid credentials.");
             }
             
-            var jwt = _jwtHandler.CreateToken(user._id, user.Role);
+            var jwt = _jwtHandler.CreateToken(user.Id, user.Role);
 
             return new TokenDTO
             {
@@ -45,9 +46,8 @@ namespace RssReaders.Infrastructure.Services
             };            
         }
 
-        public async Task RegisterAsync(Guid userId, string email, string username, string password, string role = "user")
+        public async Task RegisterAsync(ObjectId userId, string email, string username, string password, string role = "user")
         {
-            
             var user = await _userRepository.GetAsync(email);
             if(user != null)
             {

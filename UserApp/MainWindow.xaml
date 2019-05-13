@@ -1,0 +1,46 @@
+﻿<Window x:Class="UserApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label Content="Czytnik RSS" VerticalAlignment="Center" FontSize="16" />
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Label Content="Kategoria" Grid.Row="1" />
+            <ComboBox x:Name="categoryPicker" />
+        </StackPanel>
+
+        <DataGrid x:Name="dataGrd" Grid.Row="2" Grid.RowSpan="4" AlternatingRowBackground="Beige" VerticalScrollBarVisibility="Auto">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Tytuł" />
+                <DataGridTextColumn Header="Fragment artykułu" />
+                <DataGridTextColumn Header="Link" />
+                <DataGridTextColumn Header="Data publikacji" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button x:Name="updateBtn" Grid.Row="6" Content="Aktualizuj listę" />
+
+
+    </Grid>
+</Window>

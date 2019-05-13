@@ -1,0 +1,15 @@
+C:\Users\ksmol\Desktop\rss-readers\UserApp\bin\Debug\UserApp.exe.config
+C:\Users\ksmol\Desktop\rss-readers\UserApp\bin\Debug\UserApp.exe
+C:\Users\ksmol\Desktop\rss-readers\UserApp\bin\Debug\UserApp.pdb
+C:\Users\ksmol\Desktop\rss-readers\UserApp\obj\Debug\UserApp.csprojAssemblyReference.cache
+C:\Users\ksmol\Desktop\rss-readers\UserApp\obj\Debug\MainWindow.g.cs
+C:\Users\ksmol\Desktop\rss-readers\UserApp\obj\Debug\App.g.cs
+C:\Users\ksmol\Desktop\rss-readers\UserApp\obj\Debug\UserApp_MarkupCompile.cache
+C:\Users\ksmol\Desktop\rss-readers\UserApp\obj\Debug\UserApp_MarkupCompile.lref
+C:\Users\ksmol\Desktop\rss-readers\UserApp\obj\Debug\MainWindow.baml
+C:\Users\ksmol\Desktop\rss-readers\UserApp\obj\Debug\UserApp.g.resources
+C:\Users\ksmol\Desktop\rss-readers\UserApp\obj\Debug\UserApp.Properties.Resources.resources
+C:\Users\ksmol\Desktop\rss-readers\UserApp\obj\Debug\UserApp.csproj.GenerateResource.cache
+C:\Users\ksmol\Desktop\rss-readers\UserApp\obj\Debug\UserApp.csproj.CoreCompileInputs.cache
+C:\Users\ksmol\Desktop\rss-readers\UserApp\obj\Debug\UserApp.exe
+C:\Users\ksmol\Desktop\rss-readers\UserApp\obj\Debug\UserApp.pdb

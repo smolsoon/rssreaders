@@ -4,6 +4,7 @@ using System.Security.Claims;
 using System.Text;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using MongoDB.Bson;
 using RssReaders.Infrastructure.DTO;
 using RssReaders.Infrastructure.Extensions;
 
@@ -16,7 +17,7 @@ namespace RssReaders.Infrastructure.Settings
         {
             _jwtSettings  = jwtSettings.Value;
         }
-        public JwtDTO CreateToken(Guid userId, string role)
+        public JwtDTO CreateToken(ObjectId userId, string role)
         {
             var now = DateTime.UtcNow;
             var claims = new Claim[]
